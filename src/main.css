@@ -580,6 +580,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .absolute{
   position: absolute;
 }
@@ -590,14 +594,6 @@ video {
 
 .inset-0{
   inset: 0px;
-}
-
-.right-0{
-  right: 0px;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .z-10{
@@ -669,10 +665,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20{
-  margin-top: 5rem;
-}
-
 .mt-24{
   margin-top: 6rem;
 }
@@ -681,20 +673,16 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-36{
-  margin-top: 9rem;
-}
-
 .mt-4{
   margin-top: 1rem;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mt-\[-18px\]{
+  margin-top: -18px;
 }
 
-.mt-28{
-  margin-top: 7rem;
+.mt-\[1rem\]{
+  margin-top: 1rem;
 }
 
 .flex{
@@ -725,6 +713,14 @@ video {
   width: 60px;
 }
 
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[96px\]{
+  width: 96px;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -745,8 +741,8 @@ video {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
-.flex-row{
-  flex-direction: row;
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -790,6 +786,14 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.bg-\[\#00000080\]{
+  background-color: #00000080;
+}
+
+.bg-\[\#0000009e\]{
+  background-color: #0000009e;
+}
+
 .bg-\[\#000000c2\]{
   background-color: #000000c2;
 }
@@ -825,11 +829,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-20{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -845,9 +844,19 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-8{
@@ -871,10 +880,6 @@ video {
   text-align: center;
 }
 
-.text-right{
-  text-align: right;
-}
-
 .text-justify{
   text-align: justify;
 }
@@ -892,6 +897,11 @@ video {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[12px\]{
@@ -918,8 +928,8 @@ video {
   font-size: 21px;
 }
 
-.text-\[43px\]{
-  font-size: 43px;
+.text-\[35px\]{
+  font-size: 35px;
 }
 
 .text-base{
@@ -936,12 +946,20 @@ video {
   font-weight: 700;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.leading-6{
+  line-height: 1.5rem;
 }
 
 .leading-7{
@@ -968,6 +986,11 @@ video {
 .text-\[\#323232\]{
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.text-\[\#ddd\]{
+  --tw-text-opacity: 1;
+  color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
 .text-\[\#fff\]{
@@ -1034,6 +1057,51 @@ ul li a {
   color: #fff;
 }
 
+.mobile_menu ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.tesimonals_bg {
+  background: url("./img/testimonials.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
+.testi {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add the 'fixed-header' class to make the header sticky */
+
+.fixed-header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  top: 0;
+}
+
+.fixed-header ul li a {
+  color: #323232;
+}
+
+.fixed-header .dark_logo {
+  display: block;
+}
+
+.fixed-header .light_logo {
+  display: none;
+}
+
+.fixed-header .toggle_menu {
+  color: #333;
+}
+
 .hover\:bg-\[\#323232\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
@@ -1045,8 +1113,24 @@ ul li a {
 }
 
 @media (min-width: 768px){
+  .md\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .md\:mr-5{
     margin-right: 1.25rem;
+  }
+
+  .md\:mt-0{
+    margin-top: 0px;
+  }
+
+  .md\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:flex{
@@ -1069,8 +1153,21 @@ ul li a {
     width: 700px;
   }
 
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:text-\[43px\]{
+    font-size: 43px;
   }
 }
 
