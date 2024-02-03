@@ -693,24 +693,8 @@ video {
   margin-top: -18px;
 }
 
-.mt-\[1rem\]{
-  margin-top: 1rem;
-}
-
 .mt-\[6\%\]{
   margin-top: 6%;
-}
-
-.mt-\[83px\]{
-  margin-top: 83px;
-}
-
-.mt-\[90px\]{
-  margin-top: 90px;
-}
-
-.mt-\[88px\]{
-  margin-top: 88px;
 }
 
 .flex{
@@ -731,6 +715,14 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[90vh\]{
+  height: 90vh;
+}
+
+.h-\[60vh\]{
+  height: 60vh;
 }
 
 .w-\[100px\]{
@@ -922,6 +914,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
@@ -954,24 +950,8 @@ video {
   padding-top: 1rem;
 }
 
-.pt-\[90px\]{
-  padding-top: 90px;
-}
-
-.pt-\[76px\]{
-  padding-top: 76px;
-}
-
-.pt-\[50px\]{
-  padding-top: 50px;
-}
-
 .pt-\[45px\]{
   padding-top: 45px;
-}
-
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -1038,10 +1018,6 @@ video {
   font-size: 26px;
 }
 
-.text-\[35px\]{
-  font-size: 35px;
-}
-
 .text-\[55px\]{
   font-size: 55px;
 }
@@ -1076,6 +1052,10 @@ video {
   text-transform: capitalize;
 }
 
+.leading-10{
+  line-height: 2.5rem;
+}
+
 .leading-6{
   line-height: 1.5rem;
 }
@@ -1086,10 +1066,6 @@ video {
 
 .leading-8{
   line-height: 2rem;
-}
-
-.leading-10{
-  line-height: 2.5rem;
 }
 
 .tracking-\[2px\]{
@@ -1108,6 +1084,11 @@ video {
 .text-\[\#323232\]{
   --tw-text-opacity: 1;
   color: rgb(50 50 50 / var(--tw-text-opacity));
+}
+
+.text-\[\#333\]{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .text-\[\#ddd\]{
@@ -1145,11 +1126,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-\[\#333\]{
-  --tw-text-opacity: 1;
-  color: rgb(51 51 51 / var(--tw-text-opacity));
-}
-
 .opacity-50{
   opacity: 0.5;
 }
@@ -1180,7 +1156,6 @@ body {
 
 .hero_bg_img {
   background: url("./img/hero-bg.jpg");
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1306,6 +1281,10 @@ ul li a {
     height: 45px;
   }
 
+  .md\:h-\[100vh\]{
+    height: 100vh;
+  }
+
   .md\:w-\[132px\]{
     width: 132px;
   }
@@ -1347,14 +1326,6 @@ ul li a {
 
   .lg\:mt-16{
     margin-top: 4rem;
-  }
-
-  .lg\:mt-\[76px\]{
-    margin-top: 76px;
-  }
-
-  .lg\:mt-\[88px\]{
-    margin-top: 88px;
   }
 
   .lg\:flex{
