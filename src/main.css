@@ -1379,4 +1379,8 @@ ul li a {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .lg\:text-\[16px\]{
+    font-size: 16px;
+  }
 }
