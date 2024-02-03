@@ -689,6 +689,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-\[6\%\]{
+  margin-top: 6%;
+}
+
 .flex{
   display: flex;
 }
@@ -1107,7 +1111,7 @@ ul li a {
 }
 
 .active_color {
-  color: orange;
+  color: orange !important;
 }
 
 .hover\:bg-\[\#323232\]:hover{
@@ -1115,9 +1119,19 @@ ul li a {
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#fff\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#e6ae49\]:hover{
   --tw-text-opacity: 1;
   color: rgb(230 174 73 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#000\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 @media (min-width: 768px){

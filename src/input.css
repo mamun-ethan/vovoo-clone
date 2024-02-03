@@ -65,5 +65,5 @@ ul li a {
 }
 
 .active_color {
-  color: orange;
+  color: orange !important;
 }
