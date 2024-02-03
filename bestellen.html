@@ -12,6 +12,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+      <!-- swipper.js css -->
+      <link rel="stylesheet" href="./src/swiper-bundle.min.css">
     <!-- css file -->
     <link rel="stylesheet" href="src/main.css" />
   </head>
@@ -39,14 +42,14 @@
             <ul class="md:flex">
               <li>
                 <a
-                  class="px-5 uppercase text-xs font-semibold tracking-[2px] text-[#000]"
+                  class="px-5 uppercase  text-xs font-semibold tracking-[2px] text-[#000]"
                   href="./index.html"
                   >Start</a
                 >
               </li>
               <li>
                 <a
-                  class="px-5 uppercase text-xs font-semibold tracking-[2px] text-[#000]"
+                  class="px-5 active_color uppercase text-xs font-semibold tracking-[2px] text-[#000]"
                   href="./bestellen.html"
                   >Bestellen</a
                 >
@@ -131,20 +134,25 @@
     <section class="py-5 relative">
       <div class="tesimonals_bg">
         <div class="testimonials_overly h-full bg-[#0000009e]">
-          <div class="testi text-center absolute">
-            <span class="text-[#fff]">
-              <i class="fa-solid text-5xl fa-quote-left"></i>
-            </span>
-            <p
-              class="tesimonials_des text-[#ddd] font-light text-base py-10 leading-6 tracking-[2px]"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, libero?
-            </p>
-            <span class="text-[#fff] font-semibold">Mamun Ethan</span>
-          </div>
-        </div>
-      </div>
+
+     <!-- Slider main container -->
+<div class="swiper h-full">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar text-[#fff]"></div>
+</div>
     </section>
 
     <!-- footer section -->
@@ -234,6 +242,8 @@
         </p>
       </div>
     </footer>
+    <!-- swipper.js script -->
+    <script src="./src/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

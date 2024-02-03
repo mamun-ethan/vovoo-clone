@@ -21,3 +21,20 @@ window.addEventListener("scroll", function () {
     header.classList.remove("fixed-header");
   }
 });
+
+//  swipper.js intialization
+
+const swiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 3000,
+  },
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

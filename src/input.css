@@ -63,3 +63,7 @@ ul li a {
 .fixed-header .toggle_menu {
   color: #333;
 }
+
+.active_color {
+  color: orange;
+}
