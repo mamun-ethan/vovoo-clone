@@ -1417,6 +1417,11 @@ ul li a {
     padding-right: 2.5rem;
   }
 
+  .md\:px-48{
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
   .md\:text-\[43px\]{
     font-size: 43px;
   }
