@@ -22,6 +22,18 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// FAQ
+
+document.querySelectorAll(".faq_title").forEach(function (element) {
+  element.addEventListener("click", function () {
+    if (this.style.color !== "orange") {
+      this.style.color = "orange";
+    } else {
+      this.style.color = "#333";
+    }
+  });
+});
+
 //  swipper.js intialization
 
 const swiper = new Swiper(".swiper", {
@@ -37,10 +49,4 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-});
-
-// FAQ
-document.querySelector(".faq_title").addEventListener("click", function () {
-  this.classList.add("faq_title_color");
-  console.log("Hlll");
 });
