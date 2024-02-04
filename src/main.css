@@ -757,6 +757,10 @@ video {
   width: 96px;
 }
 
+.w-full{
+  width: 100%;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }
@@ -824,6 +828,17 @@ video {
 .gap-x-10{
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
+}
+
+.divide-y > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.divide-neutral-200 > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-opacity: 1;
+  border-color: rgb(229 229 229 / var(--tw-divide-opacity));
 }
 
 .rounded{
@@ -942,11 +957,6 @@ video {
   padding-right: 1rem;
 }
 
-.px-48{
-  padding-left: 12rem;
-  padding-right: 12rem;
-}
-
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1004,6 +1014,10 @@ video {
 
 .pb-5{
   padding-bottom: 1.25rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
 }
 
 .pl-3{
@@ -1124,6 +1138,10 @@ video {
   font-weight: 300;
 }
 
+.font-medium{
+  font-weight: 500;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -1203,6 +1221,11 @@ video {
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-neutral-600{
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
 .text-orange-500{
@@ -1312,6 +1335,10 @@ ul li a {
   color: orange !important;
 }
 
+.faq_title_color {
+  color: orange;
+}
+
 .hover\:cursor-pointer:hover{
   cursor: pointer;
 }
@@ -1344,6 +1371,27 @@ ul li a {
 .hover\:text-orange-500:hover{
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
+.group[open] .group-open\:rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 640px){
+  .sm\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:rounded-lg{
+    border-radius: 0.5rem;
+  }
+
+  .sm\:px-20{
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 
 @media (min-width: 768px){

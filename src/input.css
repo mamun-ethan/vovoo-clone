@@ -68,3 +68,7 @@ ul li a {
 .active_color {
   color: orange !important;
 }
+
+.faq_title_color {
+  color: orange;
+}

@@ -38,3 +38,9 @@ const swiper = new Swiper(".swiper", {
     clickable: true,
   },
 });
+
+// FAQ
+document.querySelector(".faq_title").addEventListener("click", function () {
+  this.classList.add("faq_title_color");
+  console.log("Hlll");
+});
